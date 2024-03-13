@@ -17,35 +17,35 @@ require_once('header.php');
 
 
 
-<div class="container-fluid col-12d-block">
+<div class="container-fluid d-block">
 
 
 <div class="camera_wrap camera_magenta_skin  " id="camera_wrap_2">
-      <div data-thumb="assets/img/camera/slides/thumbs/bridge.jpg" data-src="assets/img/camera/slides/bridge.jpg">
+      <div data-thumb="img/camera/slides/thumbs/bridge.jpg" data-src="img/camera/slides/bridge.jpg">
           <div class="camera_caption fadeFromBottom">
             
           </div>
       </div>
-      <div data-thumb="assets/img/camera/slides/thumbs/leaf.jpg" data-src="assets/img/camera/slides/leaf.jpg">
+      <div data-thumb="img/camera/slides/thumbs/leaf.jpg" data-src="img/camera/slides/leaf.jpg">
           <div class="camera_caption fadeFromBottom">
           </div>
       </div>
-      <div data-thumb="assets/img/camera/slides/thumbs/road.jpg" data-src="assets/img/camera/slides/road.jpg">
+      <div data-thumb="img/camera/slides/thumbs/road.jpg" data-src="img/camera/slides/road.jpg">
           <div class="camera_caption fadeFromBottom">
           
           </div>
       </div>
-      <div data-thumb="assets/img/camera/slides/thumbs/sea.jpg" data-src="assets/img/camera/slides/sea.jpg">
+      <div data-thumb="img/camera/slides/thumbs/sea.jpg" data-src="img/camera/slides/sea.jpg">
           <div class="camera_caption fadeFromBottom">
              
           </div>
       </div>
-      <div data-thumb="assets/img/camera/slides/thumbs/shelter.jpg" data-src="assets/img/camera/slides/shelter.jpg">
+      <div data-thumb="img/camera/slides/thumbs/shelter.jpg" data-src="img/camera/slides/shelter.jpg">
           <div class="camera_caption fadeFromBottom">
              
           </div>
       </div>
-      <div data-thumb="assets/img/camera/slides/thumbs/tree.jpg" data-src="assets/img/camera/slides/tree.jpg">
+      <div data-thumb="img/camera/slides/thumbs/tree.jpg" data-src="img/camera/slides/tree.jpg">
           <div class="camera_caption fadeFromBottom">
             
           </div>

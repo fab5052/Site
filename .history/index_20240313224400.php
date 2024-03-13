@@ -17,7 +17,7 @@ require_once('header.php');
 
 
 
-<div class="container-fluid col-12d-block">
+<div class="container-fluid d-block">
 
 
 <div class="camera_wrap camera_magenta_skin  " id="camera_wrap_2">

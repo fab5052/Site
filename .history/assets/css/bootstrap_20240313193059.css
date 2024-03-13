@@ -11,6 +11,7 @@
 section {
   display: block;
 }
+
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
@@ -4448,18 +4449,7 @@ input[type="submit"].btn.btn-mini {
 .popover.left {
   margin-left: -10px;
 }
-.popover-title {
-  margin: 0;
-  padding: 8px 14px;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 18px;
-  background-color: #f7f7f7;
-  border-bottom: 1px solid #ebebeb;
-  -webkit-border-radius: 5px 5px 0 0;
-  -moz-border-radius: 5px 5px 0 0;
-  border-radius: 5px 5px 0 0;
-}
+
 .popover-content {
   padding: 9px 14px;
 }

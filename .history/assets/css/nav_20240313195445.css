@@ -172,36 +172,41 @@ form {
  
     justify-content: center;
     margin: auto;
-    padding: 150px;
-    background-color: #6b666654;
-    border: solid 1px;
-    border-color: #fff;
+    padding-block: auto;
   }
   
+.form-control {
 
+  justify-content: center;
+ }
 
+ .form-control.input {
+ height: 30px;
+ }
 
  label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #dbd3d3 ;
-    text-shadow: #e8dbb9;
+    color: #dcd9d9;
   }
   
  option {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #e1dbdb;
-   
  
   }
   
  select {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #797878;
-  height: 33px;
+  color: #e1dbdb;
+  height: 35px;
 
 
 }
 
+textarea {
+    height: auto;
+   
+  }
   
 
 

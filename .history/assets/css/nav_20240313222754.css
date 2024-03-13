@@ -172,10 +172,7 @@ form {
  
     justify-content: center;
     margin: auto;
-    padding: 150px;
-    background-color: #6b666654;
-    border: solid 1px;
-    border-color: #fff;
+    padding: 50px;
   }
   
 
@@ -183,8 +180,7 @@ form {
 
  label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #dbd3d3 ;
-    text-shadow: #e8dbb9;
+    color: #827f7f ;
   }
   
  option {
@@ -202,6 +198,12 @@ form {
 
 }
 
+textarea {
+   width: 50vh;
+
+
+
+  }
   
 
 
