@@ -766,7 +766,7 @@ input[type=radio] {
     outline: none;
     -webkit-transition: width 100ms ease-in-out;
     -moz-transition: width 100ms ease-in-out;
-    transition: width 100ms ease-in-out;+
+    transition: width 100ms ease-in-out;
   }
   
   #search input::-webkit-input-placeholder {

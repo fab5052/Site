@@ -6,7 +6,7 @@ if(!isset($_GET['s'])) {
 
 $highlight = true;//highlight results or not
 $search_in = array('html', 'htm');//allowable filetypes to search in
-$search_dir = '.';//starting directory
+$search_dir = '..';//starting directory
 $recursive = true;//should it search recursively or not
 define('SIDE_CHARS', 80);
 $file_count = 0;
@@ -42,7 +42,7 @@ foreach($files as $file){
 
 			$pos_start = $pos - $side_chars;
 			$str = substr($clean_content, $pos_start, $pos_end);
-			$result = preg_replace('#'.$search_term.'#ui', '<span class="search_result">\0</span>', $str);
+			$result = preg_replace('#'.$search_term.'#ui', '<span class="search">\0</span>', $str);
 			//$result = preg_replace('#'.$search_term.'#ui', '<span class="search">'.$search_term.'</span>', $str);
 			$final_result[$file_count]['search_result'][] = $result;
 		}
@@ -52,7 +52,30 @@ foreach($files as $file){
 	$file_count++;
 }
 ?>
-<ol class="search_list">
+<!DOCTYPE HTML>
+<html lang="en-US" class="iframe">
+<head>
+	<title>Search results</title>	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+	<link rel="stylesheet" href="../css/reset.css" type="text/css" media="screen">		
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="search.css" type="text/css" media="screen">
+
+</head>
+<body>
+<script type="text/javascript">
+;(function(){	
+	document.body.onload=resize
+	window.onresize=resize
+	
+	function resize(){
+		parent._resize(document.getElementById('search-results').offsetHeight)
+	}
+})()
+</script>
+
+	<div id="search-results">
+		<ol class="search_list">
 	<?php
 		$match_count = 0;
 		for ($i=0; $i < count($final_result); $i++){
@@ -60,9 +83,9 @@ foreach($files as $file){
 				$match_count++;
 	?>
 			<li>
-				<h3 class="search_title"><a target="_top" href="<?php echo $final_result[$i]['file_name'][0]; ?>" class="search_link"> <?php echo $final_result[$i]['page_title'][0]; ?> </a></h3>
-				<p>...<?php echo $final_result[$i]['search_result'][0]; ?>...
-				<br><span class="search_result">Terms matched: <?php echo count($final_result[$i]['search_result']); ?> - URL: <?php echo $final_result[$i]['file_name'][0]; ?></span></p>
+				<h4 class="search_title"><a target="_top" href="<?php echo $final_result[$i]['file_name'][0]; ?>" class="search_link"> <?php echo $final_result[$i]['page_title'][0]; ?> </a></h4>
+				...<?php echo $final_result[$i]['search_result'][0]; ?>...
+				<span class="match">Terms matched: <?php echo count($final_result[$i]['search_result']); ?> - URL: <?php echo $final_result[$i]['file_name'][0]; ?></span>
 			</li>
 	<?php
 			}
@@ -71,7 +94,12 @@ foreach($files as $file){
 			echo '<h4>No results found for <span class="search">'.$search_term.'</span></h4>';
 		}
 	?>
-</ol>
+		</ol>
+	</div>
+
+</body>
+</html>
+
 
 <?php
 //lists all the files in the directory given (and sub-directories if it is enabled)

@@ -30,10 +30,6 @@
 <link rel="stylesheet"href="assets/css/camera.css" >
 <link rel="stylesheet"href="assets/css/bootstrap.css">
 <link rel="stylesheet" href="assets/css/nav.css">
-<link rel="stylesheet" href="assets/css/search.css">
-
-<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="search/search.js"></script>
 
 
 
@@ -81,19 +77,16 @@
           <i class="fa fa-sign-in" aria-hidden="true"></i></a> 
          </div>
 
-         
-
-  
-
-
-          <form id="search-results" class="search"   action="results.php" method="GET" accept-charset="utf-8">
-       
+        
+<?php if($_SERVER['PHP_SELF'] == '/index.php'): ?>
+  <div id="search"  >
+          <form   class="search" action="results.php" method="GET" accept-charset="utf-8">
           <input type="text" name="input" class="input" placeholder="Search" />
-          <button type="reset" class="search " id="search-button">  
-          </form>  
-          </button>        
-        </div>
-
+          <button type="reset" class="search " id="search-button">
+          </button>    </form> 
+     
+<?php endif; ?>
+</div>
         </div>
     </nav>
  

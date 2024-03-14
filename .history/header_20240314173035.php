@@ -30,10 +30,6 @@
 <link rel="stylesheet"href="assets/css/camera.css" >
 <link rel="stylesheet"href="assets/css/bootstrap.css">
 <link rel="stylesheet" href="assets/css/nav.css">
-<link rel="stylesheet" href="assets/css/search.css">
-
-<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="search/search.js"></script>
 
 
 
@@ -72,28 +68,23 @@
 
       <div class="nav-authentication col-2 d-flex   ">
 <div class="shopping d-flex " >
-      <a href="#"> <i class="fa fa-shopping-cart"></i> <span class="badge badge-red">0</span></a>
+      <a href="#"> <i class="fa fa-shopping-cart red "></i> <span class="badge badge-red">0</span></a>
        
 </div>
 <div class="sign-btns  ">    <a href="SignIn.html"> 
-  <img src="assets/img/user.svg" class="user-toggler" aria-label="Sign in page" alt="user icon">
+  <h3> <img src="assets/img/user.svg" class="user-toggler" aria-label="Sign in page" alt="user icon">
         
-          <i class="fa fa-sign-in" aria-hidden="true"></i></a> 
+          <i class="fa fa-sign-in" aria-hidden="true"></i></h3></a> 
          </div>
 
-         
-
-  
-
-
-          <form id="search-results" class="search"   action="results.php" method="GET" accept-charset="utf-8">
-       
+     
+         <?php if($_SERVER['PHP_SELF'] == '/index.php'): ?>
+          <form  class="search" id="search" action="results.php" method="GET" accept-charset="utf-8">
           <input type="text" name="input" class="input" placeholder="Search" />
-          <button type="reset" class="search " id="search-button">  
-          </form>  
-          </button>        
-        </div>
-
+          <button type="reset" class="search " id="search-button">
+          </form>
+          <?php endif; ?>
+        </button>
         </div>
     </nav>
  

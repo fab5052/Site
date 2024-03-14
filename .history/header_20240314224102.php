@@ -85,7 +85,7 @@
 
   
 
-
+<div id="search-results">
           <form id="search-results" class="search"   action="results.php" method="GET" accept-charset="utf-8">
        
           <input type="text" name="input" class="input" placeholder="Search" />

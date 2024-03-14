@@ -63,7 +63,7 @@
 
 
 <script src="toggle.js"></script>
-<script src="js/search.js"></script>
+
 <script src="carousel.js" ></script>
   <script src="plat.js"></script>
   <script src="tarteaucitron.js"></script>

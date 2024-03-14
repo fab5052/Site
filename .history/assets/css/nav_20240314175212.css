@@ -168,7 +168,7 @@
     color: #e6e3e3;
   }
   
-form.inscription {
+.inscription {
  
     justify-content: center;
     margin: auto;
@@ -744,7 +744,7 @@ input[type=radio] {
     }
   }
   
-  #search{
+  #search {
     height: 35px;
     min-width: 25px;
     position: relative;
@@ -766,7 +766,7 @@ input[type=radio] {
     outline: none;
     -webkit-transition: width 100ms ease-in-out;
     -moz-transition: width 100ms ease-in-out;
-    transition: width 100ms ease-in-out;+
+    transition: width 100ms ease-in-out;
   }
   
   #search input::-webkit-input-placeholder {
@@ -785,7 +785,7 @@ input[type=radio] {
     color: transparent;
   }
   
-  #search form .search {
+  #search .search {
     background-color: transparent;
     position: absolute;
     top: 0;

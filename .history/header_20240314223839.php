@@ -32,9 +32,6 @@
 <link rel="stylesheet" href="assets/css/nav.css">
 <link rel="stylesheet" href="assets/css/search.css">
 
-<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="search/search.js"></script>
-
 
 
 
@@ -84,15 +81,13 @@
          
 
   
-
-
           <form id="search-results" class="search"   action="results.php" method="GET" accept-charset="utf-8">
        
           <input type="text" name="input" class="input" placeholder="Search" />
           <button type="reset" class="search " id="search-button">  
           </form>  
           </button>        
-        </div>
+
 
         </div>
     </nav>

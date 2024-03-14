@@ -28,12 +28,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet"href="assets/css/camera.css" >
-<link rel="stylesheet"href="assets/css/bootstrap.css">
-<link rel="stylesheet" href="assets/css/nav.css">
-<link rel="stylesheet" href="assets/css/search.css">
 
-<script src="js/jquery-1.7.1.min.js"></script>
-	<script src="search/search.js"></script>
+<link rel="stylesheet" href="assets/css/nav.css">
 
 
 
@@ -84,15 +80,16 @@
          
 
   
-
-
-          <form id="search-results" class="search"   action="results.php" method="GET" accept-charset="utf-8">
-       
+          <form  action="results.php" method="GET" accept-charset="utf-8" id="search" class="search"  >
+          <div id="search" class="search"  >
           <input type="text" name="input" class="input" placeholder="Search" />
-          <button type="reset" class="search " id="search-button">  
-          </form>  
-          </button>        
-        </div>
+          <button type="reset" class="search " id="search-button"> 
+       
+</div>
+          
+
+</button> 
+</form>
 
         </div>
     </nav>
